@@ -83,6 +83,6 @@ route_coordinates = coordinates[best_route]
 route_coordinates_df = pd.DataFrame(route_coordinates, columns=['x', 'y', 'z'])
 
 # Save the route to a CSV file
-output_file_path = 'nearest_neighbor_best_route_optimized150.csv'
+output_file_path = 'output/nearest_neighbor_best_route_optimized150.csv'
 route_coordinates_df.to_csv(output_file_path, index=False)
 print(f"The best route has been saved to {output_file_path}")

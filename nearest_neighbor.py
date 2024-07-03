@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Load the data
-file_path = 'input/150fruit.csv'
+file_path = 'input/40fruit.csv'
 data = pd.read_csv(file_path)
 coordinates = data.values
 
@@ -93,6 +93,6 @@ route_coordinates = coordinates[best_route]
 route_coordinates_df = pd.DataFrame(route_coordinates, columns=['x', 'y', 'z'])
 
 # Save the route to a CSV file
-output_file_path = 'nearest_neighbor_best_route_optimized150.csv'
+output_file_path = 'output/nearest_neighbor_best_route_optimized40.csv'
 route_coordinates_df.to_csv(output_file_path, index=False)
 print(f"The best route has been saved to {output_file_path}")
